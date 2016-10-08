@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Spring4MVCHelloWorldNoXMLDemo.iml" filepath="$PROJECT_DIR$/Spring4MVCHelloWorldNoXMLDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TouristLab.iml" filepath="$PROJECT_DIR$/TouristLab.iml" />
     </modules>
   </component>
 </project>

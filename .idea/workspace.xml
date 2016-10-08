@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69ba33bb-ddc8-4f37-81ec-a1cd9c4239e1" name="Default" comment="" />
+    <list default="true" id="69ba33bb-ddc8-4f37-81ec-a1cd9c4239e1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/TouristLab_war.xml" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\.idea\artifacts\Spring4MVCHelloWorldNoXMLDemo_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\HelloWorld.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\src\main\java\com\websystique\springmvc\configuration\HelloWorldInitializer.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\src\main\webapp\WEB-INF\views\welcome.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\META-INF\MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\classes\com\websystique\springmvc\configuration\HelloWorldConfiguration.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\classes\com\websystique\springmvc\configuration\HelloWorldInitializer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\classes\com\websystique\springmvc\controller\HelloWorldController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\commons-logging-1.1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\javax.servlet-api-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\javax.servlet.jsp-api-2.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\spring-aop-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\spring-beans-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\spring-context-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\spring-core-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\spring-expression-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\spring-web-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\lib\spring-webmvc-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\Spring4MVCHelloWorldNoXMLDemo\WEB-INF\views\welcome.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\classes\com\websystique\springmvc\configuration\HelloWorldInitializer.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\University\vmProjects\tourists\target\classes\com\websystique\springmvc\controller\HelloWorldController.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/websystique/springmvc/configuration/HelloWorldConfiguration.class" afterPath="$PROJECT_DIR$/target/classes/com/websystique/springmvc/configuration/HelloWorldConfiguration.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\University\vmProjects\tourists\.idea\artifacts\Spring4MVCHelloWorldNoXMLDemo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/TouristLab_war_exploded.xml" />
+      <change type="MOVED" beforePath="D:\University\vmProjects\tourists\Spring4MVCHelloWorldNoXMLDemo.iml" afterPath="$PROJECT_DIR$/TouristLab.iml" />
+      <change type="MOVED" beforePath="D:\University\vmProjects\tourists\src\main\java\com\websystique\springmvc\configuration\HelloWorldConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/websystique/springmvc/configuration/AppConfiguration.java" />
+      <change type="MOVED" beforePath="D:\University\vmProjects\tourists\src\main\java\com\websystique\springmvc\controller\HelloWorldController.java" afterPath="$PROJECT_DIR$/src/main/java/com/websystique/springmvc/controller/AppController.java" />
+    </list>
     <ignored path="tourists.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,28 +84,82 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state vertical-scroll-proportion="-4.852941">
+              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloWorldController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/websystique/springmvc/controller/HelloWorldController.java">
+      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39209226">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/welcome.jsp">
+      <file leaf-file-name="AppController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/websystique/springmvc/controller/AppController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.28125">
+              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#814#815#0" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/result.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9230769">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.23407917">
+              <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.115385">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/websystique/springmvc/configuration/AppConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppInitializer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/websystique/springmvc/configuration/AppInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -83,8 +171,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit3 Test Class" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -117,7 +205,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/net/viralpatel/spring/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/viralpatel/spring/config/AppInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/websystique/springmvc/controller/HelloWorldController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/result.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/websystique/springmvc/configuration/AppConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details.jsp" />
       </list>
     </option>
   </component>
@@ -239,6 +332,62 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -293,6 +442,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="springmvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configuration" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -648,7 +801,7 @@
     <configuration default="false" name="Example" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.4" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="Spring4MVCHelloWorldNoXMLDemo:war exploded">
+        <artifact name="TouristLab:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -713,7 +866,7 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Spring4MVCHelloWorldNoXMLDemo:war exploded" />
+          <artifact name="TouristLab:war exploded" />
         </option>
       </method>
     </configuration>
@@ -737,12 +890,12 @@
       <workItem from="1475753979096" duration="2951000" />
       <workItem from="1475922359865" duration="1387000" />
       <workItem from="1475923820540" duration="1411000" />
-      <workItem from="1475925309362" duration="1308000" />
+      <workItem from="1475925309362" duration="11473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21080000" />
+    <option name="totallyTimeSpent" value="31245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -819,7 +972,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/welcome.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
@@ -850,26 +1003,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/welcome.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/websystique/springmvc/controller/AppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.28125">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/websystique/springmvc/configuration/AppInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/websystique/springmvc/configuration/AppConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        <state vertical-scroll-proportion="-4.852941">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/websystique/springmvc/controller/HelloWorldController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39209226">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.23407917">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
           <folding />
         </state>
       </provider>
@@ -880,7 +1077,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Spring4MVCHelloWorldNoXMLDemo:war</last-edited>
+          <last-edited>TouristLab:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

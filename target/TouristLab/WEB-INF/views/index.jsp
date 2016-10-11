@@ -4,18 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>HelloWorld page</title>
+<title>${title}</title>
 </head>
 <body>
+    <h1>${title}-</h1>
     <form action="${pageContext.request.contextPath}/details" method="get">
         <label>
             <select name="country">
                 <option value="en">England</option>
                 <option value="fr">France</option>
                 <option value="us">USA</option>
+                <option value="by">Belarus</option>
             </select>
         </label>
-        <input type="submit" value="Continue">
+        <input type="submit" value="Next">
     </form>
 </body>
 </html>

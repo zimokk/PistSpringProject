@@ -4,11 +4,29 @@
     <title>Details</title>
 </head>
 <body>
-  <form action="${pageContext.request.contextPath}/result">
-      <label>
-          <input type="radio" name="hotel" value="1"> 1 star
-      </label>
-      <input type="submit" value="Result">
-  </form>
+    <div>
+        <form action="${pageContext.request.contextPath}/additional">
+            <label>
+                <input type="radio" name="hotel" value="1"> 1* star
+            </label>
+            <label>
+                <input type="radio" name="hotel" value="2"> 2* star
+            </label>
+            <label>
+                <input type="radio" name="hotel" value="3"> 3* star
+            </label>
+            <label>
+                <input type="radio" name="hotel" value="4"> 4* star
+            </label>
+            <label>
+                <input type="radio" name="hotel" value="5"> 5* star
+            </label>
+            <label>Excursion
+                <input type="checkbox" name="excursion">
+            </label>
+            <input type="submit" value="Next">
+        </form>
+
+    </div>
 </body>
 </html>

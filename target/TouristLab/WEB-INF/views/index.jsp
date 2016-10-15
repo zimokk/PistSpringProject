@@ -7,7 +7,7 @@
 <title>${title}</title>
 </head>
 <body>
-    <h1>${title}-</h1>
+    <h1>${title}</h1>
     <form action="${pageContext.request.contextPath}/details" method="get">
         <label>
             <select name="country">

@@ -31,11 +31,13 @@
         <processorPath useClasspath="true" />
         <module name="HelloWorld" />
         <module name="Spring4MVCHelloWorldNoXMLDemo" />
+        <module name="TouristLab" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="HelloWorld" target="1.5" />
       <module name="Spring4MVCHelloWorldNoXMLDemo" target="1.5" />
+      <module name="TouristLab" target="1.5" />
       <module name="tourists" target="1.7" />
     </bytecodeTargetLevel>
   </component>

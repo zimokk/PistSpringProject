@@ -1,5 +1,7 @@
 package com.websystique.springmvc.controller;
 
+import com.websystique.springmvc.entities.WriteExcel;
+import jxl.write.WriteException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -53,6 +55,15 @@ public class AppController {
 		model.addAttribute("excursion", this.excursion);
 		model.addAttribute("country", this.country);
 		model.addAttribute("wishes", this.wishes);
+		WriteExcel w = new WriteExcel();
+		w.setOutputFile("c:/temp/lars.xls");
+		try {
+			w.write();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return "result";
 	}
 

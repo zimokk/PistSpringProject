@@ -3,6 +3,11 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="TouristLab.war">
       <element id="artifact" artifact-name="TouristLab:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="net.sourceforge.jexcelapi:jxl:2.6.12" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

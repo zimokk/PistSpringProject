@@ -13,8 +13,21 @@ public class Tour {
         this.cost = cost;
     }
 
+    public boolean fit(int hotel, String excursion, String country){
+        System.out.println(country);
+        return(hotel == this.hotel && (this.excursion == null || this.excursion.equals(excursion) || excursion==null) && (this.country.equals(country) || country == null));
+    }
+
     public String getCountry() {
-        return country;
+        if(country.equals("en")){
+            return "England";
+        } else if(country.equals("by")){
+            return "Belarus";
+        } else if(country.equals("us")){
+            return "USA";
+        } else{
+            return "France";
+        }
     }
 
     public void setCountry(String country) {

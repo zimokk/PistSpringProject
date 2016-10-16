@@ -9,21 +9,35 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style type="text/css">
+        body{
+            background-color: aliceblue;
+            padding: 50px;
+        }
+        .btn{
+            margin-left: 20px;
+        }
+    </style>
     <title>${title}</title>
 </head>
 <body>
-    <h1>${title}</h1>
-    <form action="${pageContext.request.contextPath}/details" method="get">
-        <label>
-            <select name="country">
-                <option value="no">Doesn't matter</option>
-                <option value="en">England</option>
-                <option value="fr">France</option>
-                <option value="us">USA</option>
-                <option value="by">Belarus</option>
-            </select>
-        </label>
-        <input type="submit" value="Next">
-    </form>
+    <div class="row">
+        <div class="col-md-3">
+            <h1>Please, select country</h1>
+            <form action="${pageContext.request.contextPath}/details" method="get">
+                <label>
+                    <select class="form-control" name="country">
+                        <option value="no">Doesn't matter</option>
+                        <option value="en">England</option>
+                        <option value="fr">France</option>
+                        <option value="us">USA</option>
+                        <option value="by">Belarus</option>
+                    </select>
+                </label>
+                <input class="btn btn-primary" type="submit" value="Next">
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>

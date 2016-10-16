@@ -74,39 +74,42 @@ public class WriteExcel {
         addCaption(sheet, 4, 3, "Tour cost");
         addCaption(sheet, 5, 3, "Tour country");
         addCaption(sheet, 6, 3, "Tour hotel");
+        addCaption(sheet, 7, 3, "Excursion included");
 
         ArrayList<Tour> tourList = new ArrayList<Tour>();
         tourList.add(new Tour("en","on",3,5500));
-        tourList.add(new Tour("en","on",4,7800));
+        tourList.add(new Tour("en",null,4,7800));
         tourList.add(new Tour("en","on",5,10000));
         tourList.add(new Tour("en","on",1,3000));
         tourList.add(new Tour("en","on",2,4400));
-        tourList.add(new Tour("en","on",3,5500));
-        tourList.add(new Tour("en","on",3,5500));
-        tourList.add(new Tour("en","on",3,5500));
+        tourList.add(new Tour("en",null,3,5500));
+        tourList.add(new Tour("en",null,3,3600));
+        tourList.add(new Tour("fr","on",3,9500));
+        tourList.add(new Tour("fr",null,2,4400));
+        tourList.add(new Tour("us","on",3,5500));
+        tourList.add(new Tour("by","on",3,5500));
+        tourList.add(new Tour("us",null,3,5500));
 
-        for (int i = 1; i < 1; i++) {
+        addCaption(sheet, 8, 3, "Wishes");
+        addLabel(sheet, 8, 4, wishes);
+        int i = 4, number = 1;
+        for (Tour temp : tourList){
+            if(temp.fit(hotel, excursion, country)){
+                addNumber(sheet, 3, i, number);
+                addNumber(sheet, 4, i, temp.getCost());
+                addLabel(sheet, 5, i, temp.getCountry());
+                addNumber(sheet, 6, i, temp.getHotel());
+                addLabel(sheet, 7, i, temp.getExcursion()==null ? "No": "Yes");
+                i++;
+                number++;
+            }
+        }
+
+        for (i = 1; i < 1; i++) {
             // First column
             addNumber(sheet, 0, i, i + 10);
             // Second column
             addNumber(sheet, 1, i, i * i);
-        }
-        // Lets calculate the sum of it
-        StringBuffer buf = new StringBuffer();
-        buf.append("SUM(A2:A10)");
-        Formula f = new Formula(0, 10, buf.toString());
-        sheet.addCell(f);
-        buf = new StringBuffer();
-        buf.append("SUM(B2:B10)");
-        f = new Formula(1, 10, buf.toString());
-        sheet.addCell(f);
-
-        // now a bit of text
-        for (int i = 12; i < 20; i++) {
-            // First column
-            addLabel(sheet, 0, i, "Boring text " + i);
-            // Second column
-            addLabel(sheet, 1, i, "Another text");
         }
     }
 

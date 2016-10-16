@@ -2,6 +2,7 @@ package com.websystique.springmvc.entities;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Locale;
 
 import jxl.CellView;
@@ -29,17 +30,17 @@ public class WriteExcel {
         this.inputFile = inputFile;
     }
 
-    public void write() throws IOException, WriteException {
+    public void write(int hotel, String excursion, String country, String wishes) throws IOException, WriteException {
         File file = new File(inputFile);
         WorkbookSettings wbSettings = new WorkbookSettings();
 
         wbSettings.setLocale(new Locale("en", "EN"));
 
         WritableWorkbook workbook = Workbook.createWorkbook(file, wbSettings);
-        workbook.createSheet("Report", 0);
+        workbook.createSheet("Result", 0);
         WritableSheet excelSheet = workbook.getSheet(0);
         createLabel(excelSheet);
-        createContent(excelSheet);
+        createContent(excelSheet, hotel, excursion, country, wishes);
 
         workbook.write();
         workbook.close();
@@ -66,18 +67,25 @@ public class WriteExcel {
         cv.setFormat(times);
         cv.setFormat(timesBoldUnderline);
         cv.setAutosize(true);
-
-        // Write a few headers
-        addCaption(sheet, 0, 0, "Header 1");
-        addCaption(sheet, 1, 0, "This is another header");
-
-
     }
 
-    private void createContent(WritableSheet sheet) throws WriteException,
-            RowsExceededException {
-        // Write a few number
-        for (int i = 1; i < 10; i++) {
+    private void createContent(WritableSheet sheet, int hotel, String excursion, String country, String wishes) throws WriteException, RowsExceededException {
+        addCaption(sheet, 3, 3, "Tour number");
+        addCaption(sheet, 4, 3, "Tour cost");
+        addCaption(sheet, 5, 3, "Tour country");
+        addCaption(sheet, 6, 3, "Tour hotel");
+
+        ArrayList<Tour> tourList = new ArrayList<Tour>();
+        tourList.add(new Tour("en","on",3,5500));
+        tourList.add(new Tour("en","on",4,7800));
+        tourList.add(new Tour("en","on",5,10000));
+        tourList.add(new Tour("en","on",1,3000));
+        tourList.add(new Tour("en","on",2,4400));
+        tourList.add(new Tour("en","on",3,5500));
+        tourList.add(new Tour("en","on",3,5500));
+        tourList.add(new Tour("en","on",3,5500));
+
+        for (int i = 1; i < 1; i++) {
             // First column
             addNumber(sheet, 0, i, i + 10);
             // Second column
@@ -123,11 +131,4 @@ public class WriteExcel {
         sheet.addCell(label);
     }
 
-    public static void main(String[] args) throws WriteException, IOException {
-        WriteExcel test = new WriteExcel();
-        test.setOutputFile("c:/temp/lars.xls");
-        test.write();
-        System.out
-                .println("Please check the result file under c:/temp/lars.xls ");
-    }
 }

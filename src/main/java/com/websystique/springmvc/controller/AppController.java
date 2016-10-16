@@ -37,8 +37,8 @@ public class AppController {
 	}
 
 	@RequestMapping(value = "/additional", method = RequestMethod.GET)
-	public String getAdditional(ModelMap model, @RequestParam("hotel") int hotel, @RequestParam("excursion") String excursion) {
-		if(hotel == 0 || excursion == null){
+	public String getAdditional(ModelMap model, @RequestParam("hotel") int hotel, @RequestParam(value = "excursion", required = false) String excursion) {
+		if(hotel == 0){
 			model.addAttribute("source","details");
 			return "404";
 		}else{
@@ -49,7 +49,7 @@ public class AppController {
 	}
 
 	@RequestMapping(value = "/result", method = RequestMethod.GET)
-	public String getResult(ModelMap model, @RequestParam("wishes") String wishes) {
+	public String getResult(ModelMap model, @RequestParam(value = "wishes") String wishes) {
 		this.wishes = wishes;
 		model.addAttribute("hotel",this.hotel);
 		model.addAttribute("excursion", this.excursion);
@@ -58,7 +58,7 @@ public class AppController {
 		WriteExcel w = new WriteExcel();
 		w.setOutputFile("c:/temp/lars.xls");
 		try {
-			w.write();
+			w.write(this.hotel,this.excursion,this.country,this.wishes);
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (Exception e) {

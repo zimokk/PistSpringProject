@@ -11,6 +11,7 @@
     <form action="${pageContext.request.contextPath}/details" method="get">
         <label>
             <select name="country">
+                <option value="no">Doesn't matter</option>
                 <option value="en">England</option>
                 <option value="fr">France</option>
                 <option value="us">USA</option>

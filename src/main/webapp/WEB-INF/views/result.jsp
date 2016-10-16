@@ -14,6 +14,31 @@
             .btn{
                 margin-left: 20px;
             }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                border: groove 2px #00e91b;
+            }
+
+            thead{
+                background-color: aquamarine;
+            }
+
+            th, td {
+                text-align: left;
+                padding: 8px;
+                text-align: center;
+            }
+
+            tr:nth-child(even){background-color: #f2f2f2}
+
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+            tfoot{
+                border-top: black solid 4px;
+            }
         </style>
     </head>
     <body>
@@ -36,6 +61,20 @@
                     </tr>
                 </c:forEach>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td>Chosen country</td>
+                    <td>Hotel</td>
+                    <td>Excursion</td>
+                    <td>Wishes</td>
+                </tr>
+                <tr>
+                    <td>${country==null ? "Doesnt matter" : country}</td>
+                    <td>${hotel}</td>
+                    <td>${excursion==null ? "Doesn^t matter" : "Yeap"}</td>
+                    <td>${wishes==null || wishes.equals("") ? "Nope" : wishes}</td>
+                </tr>
+            </tfoot>
         </table>
         <p>
             requirements: (Country: <c:out value='${country==null ? "Doesnt matter" : country}'></c:out>,

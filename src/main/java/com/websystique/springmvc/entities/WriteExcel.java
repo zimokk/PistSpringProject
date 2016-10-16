@@ -26,15 +26,31 @@ public class WriteExcel {
     private WritableCellFormat times;
     private String inputFile;
 
+    public void createContent1(File file) throws IOException, WriteException {
+        WorkbookSettings wbSettings = new WorkbookSettings();
+
+        wbSettings.setLocale(new Locale("ru", "RU"));
+
+        WritableWorkbook workbook = Workbook.createWorkbook(file, wbSettings);
+        workbook.createSheet("Result", 0);
+        WritableSheet excelSheet = workbook.getSheet(0);
+
+        this.createHeader(excelSheet, 3);
+
+        workbook.write();
+        workbook.close();
+    }
+
     public void setOutputFile(String inputFile) {
         this.inputFile = inputFile;
     }
 
     public ArrayList<Tour> write(int hotel, String excursion, String country, String wishes) throws IOException, WriteException {
         File file = new File(inputFile);
+        createContent1(new File(inputFile+'1'));
         WorkbookSettings wbSettings = new WorkbookSettings();
 
-        wbSettings.setLocale(new Locale("en", "EN"));
+        wbSettings.setLocale(new Locale("ru", "RU"));
 
         WritableWorkbook workbook = Workbook.createWorkbook(file, wbSettings);
         workbook.createSheet("Result", 0);
@@ -70,12 +86,74 @@ public class WriteExcel {
         cv.setAutosize(true);
     }
 
+    private WritableCellFormat getHeaderFormat() throws WriteException {
+
+        WritableFont cellFont = new WritableFont(WritableFont.TIMES, 12);
+        cellFont.setColour(Colour.BLACK);
+
+        WritableCellFormat cellFormat = new WritableCellFormat(cellFont);
+        cellFormat.setBackground(Colour.WHITE);
+        return cellFormat;
+    }
+
+    private WritableCellFormat getContactsFormat() throws WriteException {
+
+        WritableFont cellFont = new WritableFont(WritableFont.TIMES, 10);
+        cellFont.setColour(Colour.BLACK);
+
+        WritableCellFormat cellFormat = new WritableCellFormat(cellFont);
+        cellFormat.setBackground(Colour.GREY_25_PERCENT);
+        return cellFormat;
+    }
+
+    private WritableCellFormat getCompanyNameFormat() throws WriteException {
+
+        WritableFont cellFont = new WritableFont(WritableFont.TIMES, 14);
+        cellFont.setColour(Colour.BLACK);
+
+        WritableCellFormat cellFormat = new WritableCellFormat(cellFont);
+        cellFormat.setBackground(Colour.ICE_BLUE);
+        return cellFormat;
+    }
+
+    private void createHeader(WritableSheet sheet, int startColumn) throws WriteException {
+        WritableCellFormat headerStyle = this.getHeaderFormat();
+        WritableCellFormat contactStyle = this.getContactsFormat();
+
+        sheet.setColumnView(startColumn+1, 25);
+        sheet.setColumnView(startColumn+3, 16);
+        sheet.setColumnView(startColumn+4, 25);
+
+        this.addHeaderItem(sheet, startColumn, 0, "Company", headerStyle);
+        this.addHeaderItem(sheet, startColumn+1, 0, "Top company", this.getCompanyNameFormat());
+
+        this.addHeaderItem(sheet, startColumn, 1, "Company", headerStyle);
+        this.addHeaderItem(sheet, startColumn+1, 1, "Client name", headerStyle);
+
+        this.addHeaderItem(sheet, startColumn, 2, "Delivery", headerStyle);
+        this.addHeaderItem(sheet, startColumn+1, 2, "01.03.2019", headerStyle);
+
+        this.addHeaderItem(sheet, startColumn+3, 0, "position",headerStyle);
+        this.addHeaderItem(sheet, startColumn+4, 0, "name",headerStyle);
+        this.addHeaderItem(sheet, startColumn+5, 0, "phone",headerStyle);
+        this.addHeaderItem(sheet, startColumn+6, 0, "fax",headerStyle);
+        this.addHeaderItem(sheet, startColumn+7, 0, "skype",headerStyle);
+
+        for(int i = 1; i < 3; i++){
+            this.addHeaderItem(sheet, startColumn+3, i, "manager",contactStyle);
+            this.addHeaderItem(sheet, startColumn+4, i, "Alex ",contactStyle);
+            this.addHeaderItem(sheet, startColumn+5, i, "999-88-66",contactStyle);
+            this.addHeaderItem(sheet, startColumn+6, i, "589-78-84",contactStyle);
+            this.addHeaderItem(sheet, startColumn+7, i, "qwerty",contactStyle);
+        }
+    }
+
     private ArrayList<Tour> createContent(WritableSheet sheet, int hotel, String excursion, String country, String wishes) throws WriteException, RowsExceededException {
-        addCaption(sheet, 3, 3, "Tour number");
-        addCaption(sheet, 4, 3, "Tour cost");
-        addCaption(sheet, 5, 3, "Tour country");
-        addCaption(sheet, 6, 3, "Tour hotel");
-        addCaption(sheet, 7, 3, "Excursion included");
+//        addCaption(sheet, 3, 3, "Tour number");
+//        addCaption(sheet, 4, 3, "Tour cost");
+//        addCaption(sheet, 5, 3, "Tour country");
+//        addCaption(sheet, 6, 3, "Tour hotel");
+//        addCaption(sheet, 7, 3, "Excursion included");
 
         ArrayList<Tour> tourList = new ArrayList<Tour>();
         ArrayList<Tour> resultTourList = new ArrayList<Tour>();
@@ -108,6 +186,7 @@ public class WriteExcel {
             }
         }
 
+        createHeader(sheet, 0);
         for (i = 1; i < 1; i++) {
             // First column
             addNumber(sheet, 0, i, i + 10);
@@ -129,6 +208,12 @@ public class WriteExcel {
         Number number;
         number = new Number(column, row, integer, times);
         sheet.addCell(number);
+    }
+
+    private void addHeaderItem(WritableSheet sheet, int column, int row, String text, WritableCellFormat style) throws WriteException {
+        Label label;
+        label = new Label(column, row, text,style);
+        sheet.addCell(label);
     }
 
     private void addLabel(WritableSheet sheet, int column, int row, String s)

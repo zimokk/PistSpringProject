@@ -6,6 +6,6 @@
 </head>
 <body>
   <h1>An error occurred</h1>
-  From page - <c:out value="${source}"></c:out>
+  From page - <a href="http://localhost:8080/<c:out value='${source}'></c:out>?errorPage=true">Back</a>
 </body>
 </html>

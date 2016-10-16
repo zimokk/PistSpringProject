@@ -30,6 +30,16 @@ public class Tour {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Tour{" +
+                "country='" + country + '\'' +
+                ", excursion='" + excursion + '\'' +
+                ", hotel=" + hotel +
+                ", cost=" + cost +
+                '}';
+    }
+
     public void setCountry(String country) {
         this.country = country;
     }

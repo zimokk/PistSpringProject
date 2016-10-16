@@ -1,5 +1,6 @@
 package com.websystique.springmvc.controller;
 
+import com.websystique.springmvc.entities.Tour;
 import com.websystique.springmvc.entities.WriteExcel;
 import jxl.write.WriteException;
 import org.springframework.stereotype.Controller;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 @Controller
 @RequestMapping("/")
@@ -65,13 +67,15 @@ public class AppController {
 		model.addAttribute("wishes", this.wishes);
 		WriteExcel w = new WriteExcel();
 		w.setOutputFile("c:/temp/lars.xls");
+        ArrayList<Tour> tourList = null;
 		try {
-			w.write(this.hotel,this.excursion,this.country,this.wishes);
+            tourList = w.write(this.hotel, this.excursion, this.country, this.wishes);
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+        model.addAttribute("tourList", tourList);
 		return "result";
 	}
 

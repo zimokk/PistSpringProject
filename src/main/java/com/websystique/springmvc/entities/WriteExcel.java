@@ -30,7 +30,7 @@ public class WriteExcel {
         this.inputFile = inputFile;
     }
 
-    public void write(int hotel, String excursion, String country, String wishes) throws IOException, WriteException {
+    public ArrayList<Tour> write(int hotel, String excursion, String country, String wishes) throws IOException, WriteException {
         File file = new File(inputFile);
         WorkbookSettings wbSettings = new WorkbookSettings();
 
@@ -40,10 +40,11 @@ public class WriteExcel {
         workbook.createSheet("Result", 0);
         WritableSheet excelSheet = workbook.getSheet(0);
         createLabel(excelSheet);
-        createContent(excelSheet, hotel, excursion, country, wishes);
+        ArrayList<Tour> tourList = createContent(excelSheet, hotel, excursion, country, wishes);
 
         workbook.write();
         workbook.close();
+        return tourList;
     }
 
     private void createLabel(WritableSheet sheet)
@@ -69,7 +70,7 @@ public class WriteExcel {
         cv.setAutosize(true);
     }
 
-    private void createContent(WritableSheet sheet, int hotel, String excursion, String country, String wishes) throws WriteException, RowsExceededException {
+    private ArrayList<Tour> createContent(WritableSheet sheet, int hotel, String excursion, String country, String wishes) throws WriteException, RowsExceededException {
         addCaption(sheet, 3, 3, "Tour number");
         addCaption(sheet, 4, 3, "Tour cost");
         addCaption(sheet, 5, 3, "Tour country");
@@ -77,6 +78,7 @@ public class WriteExcel {
         addCaption(sheet, 7, 3, "Excursion included");
 
         ArrayList<Tour> tourList = new ArrayList<Tour>();
+        ArrayList<Tour> resultTourList = new ArrayList<Tour>();
         tourList.add(new Tour("en","on",3,5500));
         tourList.add(new Tour("en",null,4,7800));
         tourList.add(new Tour("en","on",5,10000));
@@ -102,6 +104,7 @@ public class WriteExcel {
                 addLabel(sheet, 7, i, temp.getExcursion()==null ? "No": "Yes");
                 i++;
                 number++;
+                resultTourList.add(temp);
             }
         }
 
@@ -111,6 +114,7 @@ public class WriteExcel {
             // Second column
             addNumber(sheet, 1, i, i * i);
         }
+        return resultTourList;
     }
 
     private void addCaption(WritableSheet sheet, int column, int row, String s)
